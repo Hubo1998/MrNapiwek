@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <SeekBar
+        android:id="@+id/SBPercent"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/TVTipconstant"
+        app:layout_constraintTop_toBottomOf="@+id/ETBillamount" />
+
+    <TextView
+        android:id="@+id/TVBillpercent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="10dp"
+        android:text="Procent"
+        app:layout_constraintBottom_toBottomOf="@+id/SBPercent"
+        app:layout_constraintStart_toStartOf="@+id/TVTipconstant"
+        app:layout_constraintTop_toTopOf="@+id/SBPercent" />
+
+    <TextView
+        android:id="@+id/TVBillamount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kwota rachunku"
+        app:layout_constraintBottom_toBottomOf="@+id/ETBillamount"
+        app:layout_constraintStart_toStartOf="@+id/TVBillpercent"
+        app:layout_constraintTop_toTopOf="@+id/ETBillamount" />
+
+    <EditText
+        android:id="@+id/ETPeopleamount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:focusable="auto"
+        android:hint="Wpisz liczbę osób"
+        android:inputType="number"
+        android:maxLength="10"
+        android:minHeight="0dp"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/ETBillamount"
+        app:layout_constraintStart_toStartOf="@+id/ETBillamount"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/ETBillamount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:focusable="auto"
+        android:hint="Wpisz kwotę"
+        android:inputType="number"
+        android:maxLength="10"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/SBPercent"
+        app:layout_constraintStart_toStartOf="@+id/SBPercent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/TVTipconstant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Napiwek"
+        app:layout_constraintBottom_toBottomOf="@+id/TVTip"
+        app:layout_constraintStart_toStartOf="@+id/TVSumconstant"
+        app:layout_constraintTop_toTopOf="@+id/TVTip" />
+
+    <TextView
+        android:id="@+id/TVSumconstant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="W sumie"
+        app:layout_constraintBottom_toBottomOf="@+id/TVSum"
+        app:layout_constraintStart_toStartOf="@+id/TVBillperpersontext"
+        app:layout_constraintTop_toTopOf="@+id/TVSum" />
+
+    <TextView
+        android:id="@+id/TVTip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/TVQuality"
+        app:layout_constraintStart_toStartOf="@+id/TVQuality"
+        app:layout_constraintTop_toBottomOf="@+id/TVQuality" />
+
+    <TextView
+        android:id="@+id/TVSum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toEndOf="@+id/TVTip"
+        app:layout_constraintStart_toStartOf="@+id/TVTip"
+        app:layout_constraintTop_toBottomOf="@+id/TVTip" />
+
+    <TextView
+        android:id="@+id/TVBillperperson"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toEndOf="@+id/TVSum"
+        app:layout_constraintStart_toStartOf="@+id/TVSum"
+        app:layout_constraintTop_toBottomOf="@+id/TVSum" />
+
+    <TextView
+        android:id="@+id/TVQuality"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="@+id/SBPercent"
+        app:layout_constraintStart_toStartOf="@+id/SBPercent"
+        app:layout_constraintTop_toBottomOf="@+id/SBPercent" />
+
+    <TextView
+        android:id="@+id/TVPeopleamountext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Liczba osób"
+        app:layout_constraintBottom_toBottomOf="@+id/ETPeopleamount"
+        app:layout_constraintStart_toStartOf="@+id/TVBillamount"
+        app:layout_constraintTop_toTopOf="@+id/ETPeopleamount" />
+
+    <TextView
+        android:id="@+id/TVBillperpersontext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:text="Kwota na osobę"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/TVBillperperson" />
+
+    <Button
+        android:id="@+id/btnGame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="switchActivity"
+        android:text="Gra"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnVerify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="verifyTip"
+        android:text="Weryfikuj"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnGame"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivVerifyTip"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnVerify"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TVBillperpersontext" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
