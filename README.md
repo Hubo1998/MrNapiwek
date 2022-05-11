@@ -1,4 +1,4 @@
-# MrNapiwek
+# Napiwkomat
 Aplikacja stworzona w AndroidStudio.  
 W aplikacji możemy podać kwotę rachunku w restauracji oraz ile % z tego chcemy przeznaczyć na napiwek oraz na ile osób podzielić rachunek, aplikacja policzy jaka to jest kwota na osobę.  
 ![obraz](https://user-images.githubusercontent.com/64363554/167955709-71452059-2252-4be9-85d6-82cbcd62589d.png)
